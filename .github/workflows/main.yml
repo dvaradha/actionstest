@@ -24,6 +24,7 @@ jobs:
         run: dir
   test-another-windows-command:
    runs-on: windows-latest
+   needs: ["run-shell-command"]
    steps:
     - name: on windows another one
       run: |
