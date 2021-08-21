@@ -18,7 +18,7 @@ jobs:
          print(platform.processor())
         shell: python
   test-another-shell-command:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
       - name: list directory
         run: dir
