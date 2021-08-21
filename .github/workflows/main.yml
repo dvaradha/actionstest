@@ -22,3 +22,11 @@ jobs:
     steps:
       - name: list directory
         run: dir
+  test-another-windows-command:
+   runs-on: windows-latest
+   steps:
+    - name: on windows another one
+    - run: |
+       pwd
+       ls -l
+      shell: bash
