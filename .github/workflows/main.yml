@@ -12,3 +12,13 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: phython Commands
+        run: |
+         import platform
+         print(platform.processor())
+        shell: python
+  test-another-shell-command:
+    runs-on: windows
+    steps:
+      - name: list directory
+        run: dir
